@@ -15,24 +15,28 @@
             <span>حذف فیلتر</span>
           </div>
           <div class="flex flex-column">
-            <app-custom-switch
-              class="mb-3"
-              label="تائید نهایی شده"
-              formControlName="finalApproval"
-            ></app-custom-switch>
-            <app-custom-switch
-              class="mb-3"
-              label="نیاز به اقدام"
-              formControlName="finalApproval"
-            ></app-custom-switch>
-            <app-custom-jalali-date-picker
-              label="از"
-              formControlName="fromDate">
-            </app-custom-jalali-date-picker>
-            <app-custom-jalali-date-picker
-              label="از"
-              formControlName="fromDate">
-            </app-custom-jalali-date-picker>
+            <div class="flex flex-column" style="border-bottom: 3px dashed red;padding-bottom: 20px">
+              <app-custom-switch
+                class="mb-3"
+                label="تائید نهایی شده"
+                formControlName="finalApproval"
+              ></app-custom-switch>
+              <app-custom-switch
+                class="mb-3"
+                label="نیاز به اقدام"
+                formControlName="finalApproval"
+              ></app-custom-switch>
+            </div>
+            <div class="flex flex-column my-5" style="border-bottom: 3px dashed red;padding-bottom: 20px">
+              <app-custom-jalali-date-picker
+                label="از"
+                formControlName="fromDate">
+              </app-custom-jalali-date-picker>
+              <app-custom-jalali-date-picker
+                label="از"
+                formControlName="fromDate">
+              </app-custom-jalali-date-picker>
+            </div>
             <app-custom-radio
               [options]="filterOptions"
               formControlName="filters"
