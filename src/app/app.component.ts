@@ -5,6 +5,8 @@ import {CustomSwitchComponent} from "./ui-kit/custom-switch/custom-switch.compon
 import {CustomRadioComponent, radioOption} from "./ui-kit/custom-radio/custom-radio.component";
 import {CustomTextInputComponent} from "./ui-kit/custom-text-input/custom-text-input.component";
 import {CustomJalaliDatePickerComponent} from "./ui-kit/custom-jalali-date-picker/custom-jalali-date-picker.component";
+import {SvgIconComponent} from "./components/svg-icon/svg-icon.component";
+import {StepperComponent} from "./components/stepper/stepper.component";
 
 @Component({
   selector: 'app-root',
@@ -15,7 +17,9 @@ import {CustomJalaliDatePickerComponent} from "./ui-kit/custom-jalali-date-picke
     CustomSwitchComponent,
     CustomRadioComponent,
     CustomJalaliDatePickerComponent,
-    CustomTextInputComponent
+    CustomTextInputComponent,
+    SvgIconComponent,
+    StepperComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
@@ -49,7 +53,7 @@ export class AppComponent implements OnInit {
     })
   }
 
-  resetFilters(){
+  resetFilters() {
     this.formRef.resetForm()
   }
 }

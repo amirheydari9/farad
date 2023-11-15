@@ -1,0 +1,33 @@
+.page-wrapper {
+  border-radius: 20px 20px 0 0;
+  border: 1px solid;
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(0deg, #AECFFF, #AECFFF), linear-gradient(0deg, #D8D5D5, #D8D5D5);
+  border-bottom: 1px solid #D8D5D5;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.banner {
+  padding: 10px;
+  background: #98D9F8;
+}
+
+.right-side {
+ min-width: 255px;
+  padding-top: 50px;
+  border-radius: 10px;
+  border: 1px solid red;
+  background: #D2D2D2 linear-gradient(0deg, #F5F5F5, #F5F5F5);
+
+}
+
+.steps {
+  border-radius: 15px 15px 0 0;
+  border: 1px;
+  //background: linear-gradient(0deg, #ECECEC, #ECECEC),
+  //linear-gradient(0deg, #FAFCFF, #FAFCFF);
+}

@@ -33,9 +33,6 @@ import {NgPersianDatepickerModule} from 'ng-persian-datepicker';
             </span>
           </ng-persian-datepicker>
         </div>
-        <span class="flex align-items-center justify-content-center icon cursor-pointer">
-          <i class="pi pi-calendar"></i>
-        </span>
       </div>
     </div> `,
   styles: [`

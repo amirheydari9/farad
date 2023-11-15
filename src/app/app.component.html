@@ -1,29 +1,62 @@
-<form [formGroup]="form">
-
-  <button (click)="resetFilters()">reset</button>
-  <app-custom-switch
-    label="finalApproval"
-    formControlName="finalApproval"
-  ></app-custom-switch>
-
-  <app-custom-switch
-    label="needToTakeAction"
-    formControlName="needToTakeAction"
-  ></app-custom-switch>
-
-  <app-custom-radio
-    [options]="filterOptions"
-    formControlName="filters"
-  ></app-custom-radio>
-
-  <app-custom-jalali-date-picker
-    label="از"
-    formControlName="fromDate">
-  </app-custom-jalali-date-picker>
-
-  <app-custom-text-input
-    placeholder="aa"
-    formControlName="search"
-  ></app-custom-text-input>
-
-</form>
+<div class="page-wrapper">
+  <div class="flex align-items-center justify-content-between header">
+    <span>فهرست اسناد</span>
+    <span>بازگشت ></span>
+  </div>
+  <div class="py-4 px-5">
+    <div class="banner">
+      <span>کاربر گرامی! توجه داشته باشید، در این قسمت فقط اسناد ثبت شده پس از تاریخ 1392/6/25 نمایش داده میشود.</span>
+    </div>
+    <form [formGroup]="form">
+      <div class="flex align-items-stretch justify-content-between mt-5">
+        <div class="right-side px-3 ml-4">
+          <div class="flex align-items-center justify-content-between mb-5">
+            <span>فیلترها</span>
+            <span>حذف فیلتر</span>
+          </div>
+          <div class="flex flex-column">
+            <app-custom-switch
+              class="mb-3"
+              label="تائید نهایی شده"
+              formControlName="finalApproval"
+            ></app-custom-switch>
+            <app-custom-switch
+              class="mb-3"
+              label="نیاز به اقدام"
+              formControlName="finalApproval"
+            ></app-custom-switch>
+            <app-custom-jalali-date-picker
+              label="از"
+              formControlName="fromDate">
+            </app-custom-jalali-date-picker>
+            <app-custom-jalali-date-picker
+              label="از"
+              formControlName="fromDate">
+            </app-custom-jalali-date-picker>
+            <app-custom-radio
+              [options]="filterOptions"
+              formControlName="filters"
+            ></app-custom-radio>
+          </div>
+        </div>
+        <div class="left-side flex-grow-1">
+          <div class="flex align-items-center justify-content-between mb-3">
+            <div class="flex-grow-1">
+              <app-custom-text-input
+                placeholder="aa"
+                formControlName="search"
+              ></app-custom-text-input>
+            </div>
+            <div>
+              <app-svg-icon class="mr-3" svg="11" width="37" height="33"></app-svg-icon>
+              <app-svg-icon svg="8" width="37" height="33"></app-svg-icon>
+            </div>
+          </div>
+          <div class="steps">
+            <app-stepper></app-stepper>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate:sprite": "svg-icon-generate --folder=src/assets/svg --output=src/assets/sprites/sprite.svg"
   },
   "private": true,
   "dependencies": {
@@ -23,7 +24,8 @@
     "zone.js": "~0.13.0",
     "ng-persian-datepicker": "^6.1.0",
     "primeflex": "^3.3.1",
-    "jalali-ts": "^2.0.5"
+    "jalali-ts": "^2.0.5",
+    "svg-icon-sprite": "^1.1.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.1.4",
