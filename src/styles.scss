@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: yekanbakh, serif;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+* {
+  user-select: none
+}
+
+input, textarea {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  //-webkit-appearance: none;
+  box-shadow: none !important;
+}

@@ -1,0 +1,17 @@
+<div style="height: 80px">
+  <div class="big-parent d-flex align-items-center justify-content-between"
+       [ngClass]="[control.invalid && (control.dirty || control.touched) ? 'error' :'default']">
+    <div class="wrapper" (click)="input.focus()">
+      <input
+        class="text-natural-800 font-md-medium"
+        #input
+        autocomplete="off"
+        [disabled]="disabled"
+        [placeholder]="placeholder"
+        (input)="onChanged($event)"
+        (blur)="touched()"
+        [(ngModel)]="value">
+    </div>
+    <ng-content></ng-content>
+  </div>
+</div>

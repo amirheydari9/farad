@@ -1,0 +1,9 @@
+<label class="switch">
+  <input
+    [disabled]="disabled"
+    type="checkbox"
+    [(ngModel)]="value"
+    (change)="onChanged($event)"
+    (blur)="touched()">
+  <span class="slider round"></span>
+</label>

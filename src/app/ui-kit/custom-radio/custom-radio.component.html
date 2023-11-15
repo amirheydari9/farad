@@ -1,0 +1,8 @@
+<ng-container *ngFor="let item of options">
+  <div class="flex flex-column">
+    <label>
+      <input type="radio" [value]="item.value" [(ngModel)]="value" (ngModelChange)="onChanged($event)" (blur)="touched()">
+      <span>{{item.label}}</span>
+    </label>
+  </div>
+</ng-container>
