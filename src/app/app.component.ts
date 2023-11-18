@@ -49,11 +49,11 @@ export class AppComponent implements OnInit {
       needToTakeAction: this.formBuilder.control(true),
       fromDate: this.formBuilder.control(null),
       toDate: this.formBuilder.control(null),
-      filters: this.formBuilder.control(1),
+      filters: this.formBuilder.control(null)
     })
   }
 
-  resetFilters() {
+  handleResetFilter() {
     this.formRef.resetForm()
   }
 }
