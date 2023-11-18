@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+  padding: 10px;
 }
 
 .stepper-item {
@@ -59,13 +60,13 @@
     padding: 10px;
   }
 
-  .title{
+  .title {
     color: #414141;
     font-weight: 400;
     font-size: 15px;
   }
 
-  .bold{
+  .bold {
     color: #414141;
     font-weight: 700;
     font-size: 15px;
