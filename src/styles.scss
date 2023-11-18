@@ -6,10 +6,12 @@ html, body {
 }
 
 body {
-  margin: 0;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  //align-items: center;
+  margin-top: 100px;
+  //height: 100vh;
+  //box-sizing: border-box;
 }
 
 * {
