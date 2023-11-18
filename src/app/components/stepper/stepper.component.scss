@@ -12,7 +12,7 @@
 .stepper-item::after {
   position: absolute;
   content: "";
-  border-left: 2px solid red;
+  border-left: 2px solid #C4C2C2;
   height: 100%;
   width: 2px;
   top: 50%;
@@ -21,4 +21,55 @@
   transform: translate(-50%, -50%);
 }
 
+.title {
+  color: #414141;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 48px;
+}
+
+.info {
+  color: #2196F3;
+}
+
+.detail {
+  color: #F2AC00;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 48px;
+}
+
+.tracNum {
+  color: #939393;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 48px;
+}
+
+.description {
+  border-radius: 10px;
+  background: #FCEABE;
+
+  .tag {
+    background: #A8D9F05E;
+    color: #2196F3;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .title{
+    color: #414141;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .bold{
+    color: #414141;
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+}
 

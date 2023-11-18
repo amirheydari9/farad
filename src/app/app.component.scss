@@ -1,6 +1,6 @@
 .page-wrapper {
-  border-radius: 20px 20px 0 0;
-  border: 1px solid;
+  border-radius: 20px;
+  border: 1px solid #C8C8C8;
   overflow: hidden;
   width: 1400px;
 }
@@ -10,25 +10,64 @@
   border-bottom: 1px solid #D8D5D5;
   padding: 10px;
   overflow: hidden;
+
+  .title {
+    color: #002060;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 48px;
+  }
 }
 
 .banner {
   padding: 10px;
   background: #98D9F8;
+
+  .title {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 48px;
+  }
 }
 
 .right-side {
   min-width: 255px;
   padding-top: 50px;
   border-radius: 10px;
-  border: 1px solid red;
+  border: 1px solid #D2D2D2;
   background: #D2D2D2 linear-gradient(0deg, #F5F5F5, #F5F5F5);
+
+  .title {
+    color: #414141;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+  }
+
+  .reset {
+    color: #35BEFF;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 48px;
+  }
+
+  .divider {
+    border-bottom: 3px dashed #757575;
+    padding-bottom: 20px
+  }
+
+  .year{
+    color: #414141;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 48px;
+  }
 
 }
 
 .steps {
   border-radius: 15px 15px 0 0;
-  border: 1px;
+  border: 1px solid #ECECEC;
   padding: 20px;
   background: #FAFCFF
 }

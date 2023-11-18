@@ -15,6 +15,7 @@ import {NgPersianDatepickerModule} from 'ng-persian-datepicker';
         <input
           [formControl]="control"
           type="text"
+          [placeholder]="placeholder"
           #input
           [value]="value"
           [disabled]="disabled"
@@ -23,17 +24,35 @@ import {NgPersianDatepickerModule} from 'ng-persian-datepicker';
       </ng-persian-datepicker>
     </div> `,
   styles: [`
-    :host ::ng-deep .datepicker-outer-container {
-      position: fixed;
-      z-index: 10000;
-    } `]
+    :host ::ng-deep {
+      input {
+        background: #FFFFFF;
+        border: unset;
+        padding: 10px;
+        margin-bottom: 8px;
+        border-radius: 5px;
+
+        ::placeholder {
+          color: #C8C8C8;
+          font-weight: 300;
+          font-size: 5px;
+          line-height: 48px;
+        }
+      }
+
+      .datepicker-outer-container {
+        position: fixed;
+        z-index: 10000;
+      }
+    }`
+  ]
 })
 export class CustomJalaliDatePickerComponent extends BaseControlValueAccessor<string> implements OnInit {
 
   control: FormControl
 
   @Input() class: string;
-  @Input() label: string;
+  @Input() placeholder: string;
 
   constructor(
     @Self() public controlDir: NgControl

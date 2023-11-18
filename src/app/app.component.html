@@ -1,21 +1,21 @@
 <div class="page-wrapper">
   <div class="flex align-items-center justify-content-between header">
-    <span>فهرست اسناد</span>
-    <span>بازگشت ></span>
+    <span class="title">فهرست اسناد</span>
+    <span class="title">بازگشت ></span>
   </div>
   <div class="py-4 px-5">
-    <div class="banner">
-      <span>کاربر گرامی! توجه داشته باشید، در این قسمت فقط اسناد ثبت شده پس از تاریخ 1392/6/25 نمایش داده میشود.</span>
+    <div class="banner px-5">
+      <span class="title">کاربر گرامی! توجه داشته باشید، در این قسمت فقط اسناد ثبت شده پس از تاریخ 1392/6/25 نمایش داده میشود.</span>
     </div>
-    <div class="flex align-items-stretch justify-content-between mt-5">
+    <div class="flex align-items-stretch justify-content-between my-5">
       <div class="right-side px-3 ml-4">
         <form [formGroup]="form">
           <div class="flex align-items-center justify-content-between mb-5">
-            <span>فیلترها</span>
-            <span class="cursor-pointer" (click)="handleResetFilter()">حذف فیلتر</span>
+            <span class="title">فیلترها</span>
+            <span class="cursor-pointer reset" (click)="handleResetFilter()">حذف فیلتر</span>
           </div>
           <div class="flex flex-column">
-            <div class="flex flex-column" style="border-bottom: 3px dashed red;padding-bottom: 20px">
+            <div class="flex flex-column divider">
               <app-custom-switch
                 class="mb-3"
                 label="تائید نهایی شده"
@@ -27,28 +27,31 @@
                 formControlName="finalApproval"
               ></app-custom-switch>
             </div>
-            <div class="flex flex-column my-5" style="border-bottom: 3px dashed red;padding-bottom: 20px">
+            <div class="flex flex-column mt-3 divider">
+              <span class="year">سال</span>
               <app-custom-jalali-date-picker
-                label="از"
+                placeholder="از"
                 formControlName="fromDate">
               </app-custom-jalali-date-picker>
               <app-custom-jalali-date-picker
-                label="تا"
+                placeholder="تا"
                 formControlName="toDate">
               </app-custom-jalali-date-picker>
             </div>
-            <app-custom-radio
-              [options]="filterOptions"
-              formControlName="filters"
-            ></app-custom-radio>
+           <div class="mt-3">
+             <app-custom-radio
+               [options]="filterOptions"
+               formControlName="filters"
+             ></app-custom-radio>
+           </div>
           </div>
         </form>
       </div>
       <div class="left-side flex-grow-1">
-        <div class="flex align-items-end justify-content-between mb-3">
-          <div class="flex-grow-1">
+        <div class="flex align-items-end justify-content-between mb-2">
+          <div class="flex-grow-1 mb-3">
             <app-custom-text-input
-              placeholder="aa"
+              placeholder="جستجو"
               formControlName="search"
             ></app-custom-text-input>
           </div>
